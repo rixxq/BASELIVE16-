@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Link Relay</title>
+    <!-- 
+      ブラウザに対して「リファラ（リンク元）情報を削らず、常にフルURLで相手に送りなさい」と強制する命令。
+      これでLivePocket側は「どこから来たか」を正しく判定できるようになります。
+    -->
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f7;
+        }
+        .container {
+            text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #ff3b30;
+            color: white;
+            padding: 16px 32px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: background-color 0.2s, transform 0.1s;
+        }
+        .btn:hover {
+            background-color: #e03228;
+        }
+        .btn:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- 
+      JavaScriptを排除し、純粋なHTMLリンクにしています。
+      target="_blank" を外して「同じタブ」で開くことで、ブラウザのセキュリティ制限を回避します。
+    -->
+    <a href="https://livepocket.jp/e/8eqphxyilf" class="btn">WHITE SCORPION FC先行 申込</a>
+</div>
+
+</body>
+</html>
